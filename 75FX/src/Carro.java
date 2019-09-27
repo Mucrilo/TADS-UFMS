@@ -14,23 +14,42 @@ public class Carro extends Veiculo {
 		super();
 		this.placa = placa;
 	}
-
+	
+	public Carro(int velocidadeMaxima, int qtdMaximaPassageiros, String modelo, Marca marca, String placa){
+		
+		super();
+		setVelocidadeMaxima(velocidadeMaxima);
+		setQtdMaximaPassageiros(qtdMaximaPassageiros);
+		setModelo(modelo);
+		setMarca(marca);
+		this.placa = placa;
+	}
+	
 	public Carro(Carro carro) {
 
 		super();
-		this.
+		this.setMarca(carro.getMarca());
+		this.setModelo(carro.getModelo());
+		this.setQtdMaximaPassageiros(carro.getQtdMaximaPassageiros());
+		this.setVelocidadeMaxima(carro.getVelocidadeMaxima());
 		this.placa = carro.getPlaca();
 	}
 
 	@Override
 	public String toString() {
-		return "Carro [placa=" + placa + "]";
+		return "velocidadeMaxima: " + getVelocidadeMaxima() + 
+				", qtdMaximaPassageiros: " + getQtdMaximaPassageiros() + 
+				", modelo: " + getModelo() + 
+				", placa: " + placa +
+				", marca:{" + 
+				"nomeFantasia: " + getMarca().getNomeFantasia() + 
+				", slogan: "+ getMarca().getSlogan() +
+				", anoFundacao: " + getMarca().getAnoFundacao() + "}";
 	}
 
-	@Override
-	public int compareTo() {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Carro carro) {
+		
+		return this.placa.compareTo(carro.placa);
 	}
 
 	@Override
