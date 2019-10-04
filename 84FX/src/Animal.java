@@ -25,4 +25,12 @@ public abstract class Animal implements Comparable<Animal> {
 	public String toString() {
 		return "Animal{familia=" + getFamilia() + ", id=" + getId() + "}";
 	}
+
+}
+
+public interface Animal {
+
+	public String getId();
+
+	public String getFamilia();
 }
