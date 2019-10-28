@@ -1,4 +1,13 @@
-UFMS TADS Prog2 2019.2
+UFMS TADS Prog2 2019.2 Primeiro repositório
+
+Faculdade - UFMS - Universidade Federal de Mato Grosso do Sul.
+
+Curso - TADS - Curso Superiore de Tecnologia em Análise e Desenvolvimento de Sistemas.
+
+Matéria - Prog2 - Algoritmos e Programação Orientada à Objetos II
+
+Ano - 2019 - 2º Semestre.
+
 Primeiro repositório 
 
 Apanhando do GitHub mas seguindo.
