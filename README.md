@@ -1,2 +1,0 @@
-# TADS-UFMS
-Primeiro repositório 
